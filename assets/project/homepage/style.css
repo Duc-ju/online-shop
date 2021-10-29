@@ -152,10 +152,10 @@ img{
   text-decoration: none;
   color: black;
   float: left;
-  
   border-radius: 2px;
   padding-left: 4px;
   padding-right: 4px;
+  border-radius: 4px;
 }
 .item-container{
   border: 1px solid rgba(115, 149, 174, 0.5);
