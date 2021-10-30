@@ -5,12 +5,11 @@
   --secondary_color: #82390c;
   --extra_color: #e46415; */
   /* selection 2 */
-  --primary_color: #557A95;
-  --secondary_color: #7395AE;
+  /* --primary_color: #557A95; */
+  /* --secondary_color: #7395AE;
   --extra_color: #5D5C61;
   --highlight_color: #ff7f50;
-  --background_color: #f5f5f5;
-  /* --background_color: rgba(100, 100, 100, 0.1); */
+  --background_color: #f5f5f5; */
   /* selection 3 */
   /* --primary_color: #1F2833;
   --secondary_color: #45A29E;
@@ -24,9 +23,11 @@
   --secondary_color: #e98074;
   --extra_color: #d8c3a5; */
   /* selection 5 ổn */ 
-  /* --primary_color: #5680e9;
+  --primary_color: #5680e9;
   --secondary_color: #5ab9ea;
-  --extra_color: #84ceeb; */
+  --extra_color: #84ceeb;
+  --background_color: #f5f5f5;
+  --highlight_color: #ee4d2d;
 }
 * {
   box-sizing: border-box;
