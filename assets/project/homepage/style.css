@@ -72,12 +72,7 @@ img{
   padding: 16px;
   
 }
-.label-direction{
-  color: var(--primary_color);
-}
-.label-direction:hover{
-  color: var(--secondary_color);
-}
+
 
 #portfolio{
   display: block;

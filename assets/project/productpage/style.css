@@ -23,16 +23,7 @@
 .mark-section i{
 	color: var(--highlight_color);
 }
-.section-label {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1200px;
-  background-color: white;
-  border-radius: 2px;
-  margin: 4px auto;
-  padding: 16px;
-}
+
 #content {
   display: flex;
   flex-direction: row;
