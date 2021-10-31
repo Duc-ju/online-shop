@@ -1,0 +1,103 @@
+.row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: -4px;
+	margin-right: -4px;
+}
+.col-6{
+	width: 50%;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.button{
+	background-color: var(--primary_color);
+}
+.button:hover{
+	background-color: var(--secondary_color);
+}
+.section-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+  background-color: white;
+  border-radius: 2px;
+  margin: 4px auto;
+  padding: 16px;
+}
+#content {
+  display: flex;
+  flex-direction: row;
+  margin: 16px auto;
+  width: 1200px;
+  max-width: 1200px;
+}
+#sub-nav {
+  width: 20%;
+  padding-right: 32px;
+}
+#product {
+  width: 80%;
+}
+.sub-nav-section h3{
+	padding: 24px 0;
+}
+.sub-nav-section::after{
+	margin-top: 16px;
+	content: "";
+	display: block;
+	border-bottom: 1px solid var(--secondary_color);
+}
+.sub-nav-section ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.sub-nav-section li{
+	display: block;
+	padding: 8px 8px 8px 32px;
+}
+
+.sub-nav-section input[type="text"]{
+	outline: none;
+	padding: 4px 8px;
+
+}
+.sub-nav-section input[type="submit"]{
+	outline: none;
+	border: none;
+	display: block;
+	color: white;
+	width: 100%;
+	padding: 8px 0;
+}
+.sort-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sort-direction {
+  background-color: var(--background_color);
+}
+
+.sort-container {
+  padding: 16px 8px;
+}
+.sort-container h3 {
+}
+.sort-container a {
+  padding: 8px 16px;
+  background-color: white;
+  color: black;
+  margin-left: 8px;
+}
+.sort-container a.active{
+  background-color: var(--primary_color);
+  color: white;
+}
+.sort-container a:hover {
+  background-color: var(--primary_color);
+  color: white;
+}
