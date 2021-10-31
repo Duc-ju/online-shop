@@ -47,6 +47,9 @@
 	height: 82px;
 	border: 1px solid var(--primary_color);
 }
+.list-item:hover{
+	border: 1px solid var(--highlight_color);
+}
 .list-item +.list-item{
 	margin-left: 8px;
 }
@@ -75,7 +78,8 @@
 .product-brand a{
 	display: inline-block;
 }
-.product-brand a:hover{
+.product-brand a:hover,
+ .description-section a:hover{
 	color: var(--primary_color);
 }
 .product-info .old-price{
@@ -176,7 +180,6 @@
 	margin-right: 16px;
 	padding-bottom: 16px;
 }
-
 
 .description-col-2{
 	width: 20%;
