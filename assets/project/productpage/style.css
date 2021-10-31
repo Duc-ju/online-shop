@@ -16,6 +16,13 @@
 .button:hover {
   background-color: var(--secondary_color);
 }
+.mark-section{
+	padding: 24px 0;
+	text-align: center;
+}
+.mark-section i{
+	color: var(--highlight_color);
+}
 .section-label {
   display: flex;
   flex-direction: row;
@@ -81,17 +88,18 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  
 }
 .sort-direction {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background_color);
+  padding: 8px 8px;
+  background-color: rgba(0,0,0,.03);
 }
-
-.sort-container {
-  padding: 16px 8px;
+.sort-section{
+	margin: 16px 0;
 }
 .sort-container h3 {
 }

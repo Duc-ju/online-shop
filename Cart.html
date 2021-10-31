@@ -22,40 +22,38 @@
 	<div id="main">
 		<header id="header">
 
-
-
-
-
-			<div class="brand-name pointer">
-				<i class="ti-user"> </i>
-				DucJu
-			</div>
-
-
-
 			<div class="nav">
 				<ul class="control">
-					<li class="control-item "><a href="https://duc-ju.github.io/bookstore-template/">Home</a></li>
-
-					<li class="control-item "><a href="https://duc-ju.github.io/bookstore-template/ManageBook.html">Book Management</a>
+					<li class="control-item">
+						<a href="#">
+							<i class="ti-user"> </i>
+							Đức Ju
+						</a>
 					</li>
-
-
-
-					<li class="control-item"><a href="#">Logout</a></li>
+					<li class="control-item active"><a href="https://duc-ju.github.io/online-shop/">Trang chủ</a></li>
+					<li class="control-item" id="logout"><a href="#">Đăng xuất</a></li>
 
 				</ul>
 			</div>
+
+			<a href="https://duc-ju.github.io/online-shop/" class="brand-name">
+				<div class="brand-logo"><img src="assets/photo/logo.png" alt="" class=""></div>
+			</a>
+
+
+
 			<form method="get" action="#" class="search">
-				<input type="text" name="book_name" placeholder="Book name" id="search-product-name">
-				<input type="submit" value="Search" id="submit-button">
+				<input type="text" name="search" placeholder="Nhập tên sản phẩm"
+					id="search-product-name">
+				<input type="submit" value="Tìm kiếm" id="submit-button">
 			</form>
+
 
 		</header>
 		<div id="content">
 			<div class="empty-cart">
 				<h2 class="empty-cart-notice">Cart is empty</h2>
-				<a href="https://duc-ju.github.io/bookstore-template/" class="go-home-button">Go home</a>
+				<a href="https://duc-ju.github.io/online-shop/" class="go-home-button">Go home</a>
 			</div>
 			<div class="cart-container">
 				<div class="sub-nav">
@@ -253,16 +251,61 @@
 		</div>
 
 		<div id="footer">
-			<div class="about">
-				<p class="author-name">Author : Nguyen Trang Duc</p>
-				<p class="author-identity">Student-identity : B18DCCN177</p>
-				<p class="author-last-update">Lastest update : 9/6/2021 at
-					12:55PM</p>
-				<p class="author-contact">
-					Contact me <a href="https://www.facebook.com/trangducc/" class="contact-icon"><i
-							class="ti-facebook"></i></a>
-				</p>
+			<div class="footer-container">
+				<div class="footer-section">
+					<h2>CHĂM SÓC KHÁCH HÀNG</h2>
+					<ul>
+						<li><a href="#">Trung Tâm Trợ Giúp</a></li>
+						<li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+						<li><a href="#">Thanh Toán</a></li>
+						<li><a href="#">Vận Chuyển</a></li>
+						<li><a href="#">Trả Hàng & Hoàn Tiền</a></li>
+						<li><a href="#">Chăm Sóc Khách Hàng</a></li>
+						<li><a href="#">Chính Sách Bảo Hành</a></li>
+					</ul>
+				</div>
+				<div class="footer-section">
+					<h2>VỀ QUÁN QUEN</h2>
+					<ul>
+						<li><a href="#">Giới Thiệu Về Quán Quen Việt Nam</a></li>
+						<li><a href="#">Tuyển Dụng</a></li>
+						<li><a href="#">Chính sách bảo mật</a></li>
+						<li><a href="#">Chính hãng</a></li>
+						<li><a href="#">Chương trình tiếp thị liên kết</a></li>
+						<li><a href="#">Kênh quảng bá</a></li>
+						<li><a href="#">Liên hệ với truyền thông</a></li>
+					</ul>
+				</div>
+		
+				<div class="footer-section">
+					<h2>THANH TOÁN</h2>
+					<ul>
+						<li><a href="#">Visa</a></li>
+						<li><a href="#">MasterCard</a></li>
+						<li><a href="#">JCB</a></li>
+						<li><a href="#">CODE</a></li>
+						<li><a href="#">Trả Góp</a></li>
+					</ul>
+					<h2>ĐƠN VỊ VẬN CHUYỂN</h2>
+					<ul>
+						<li><a href="#">Giao Hàng Nhanh</a></li>
+						<li><a href="#">Giao hàng tiết kiệm</a></li>
+						<li><a href="#">Viettel Post</a></li>
+						<li><a href="#">Ninja Van</a></li>
+					</ul>
+				</div>
+		
+				<div class="footer-section">
+					<h2>THEO DÕI CHÚNG TÔI TRÊN</h2>
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook-square"></i>   Facebook</a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+						<li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+					</ul>
+				</div>
 			</div>
+			<div class="ruler-line">&nbsp</div>
+			<div id="footer-copyright">© 2021 Quán Quen. Tất cả các quyền được bảo lưu.</div>
 		</div>
 		<div id="modal" class="modal">
 			<div class="modal-container">

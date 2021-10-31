@@ -55,7 +55,7 @@ h3,
 h4 {
   margin: 0;
 }
-.actived {
+.active{
   background-color: var(--secondary_color);
 }
 .pointer{
@@ -78,6 +78,9 @@ input{
 }
 .mt-16{
   margin-top: 16px!important;
+}
+.mt-32{
+  margin-top: 32px!important;
 }
 .toast {
   display: flex;
@@ -295,24 +298,46 @@ input{
 
 /* Footer section */
 #footer {
+  
+  /* justify-content: center;
+  align-items: center; */
+  background-color: var(--primary_color);
+}
+.footer-container{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary_color);
+  flex-direction: row;
 }
-#footer .about {
+.footer-section{
+  padding: 16px;
+  width: 25%;
+}
+.footer-section ul{
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+.footer-section li{
+
+}
+.footer-section h2{
+  font-size: 18px;
   color: white;
-  font-size: 24px;
-  font-style: italic;
-  font-weight: 500;
+}
+.footer-section a{
+  padding: 12px 16px;
+  font-size: 13px;
+  color: white;
+}
+.ruler-line{
+  height: 4px;
+  border-top: 1px solid white;
+  margin: 0 16px;
+}
+#footer-copyright{
+  color: white;
+  font-size:18px;
   text-align: center;
-}
-#footer .contact-icon {
-  color: white;
-  padding: 6px 4px 2px 4px;
-  border-radius: 2px;
-  background-color: dodgerblue;
-  text-decoration: none;
+  padding: 16px;
 }
 #main {
   position: relative;
