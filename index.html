@@ -19,10 +19,15 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" />
 	<script>
 		$(document).ready(function () {
-			$('.slider').bxSlider();
+			$('.slider').bxSlider({
+				auto: true,
+				pause: 6000
+			});
 		});
 	</script>
 
@@ -43,7 +48,8 @@
 							Đức Ju
 						</a>
 					</li>
-					<li class="control-item active"><a href="https://duc-ju.github.io/online-shop/">Trang chủ</a></li>
+					<li class="control-item active"><a
+							href="https://duc-ju.github.io/online-shop/">Trang chủ</a></li>
 					<li class="control-item" id="logout"><a href="#">Đăng xuất</a></li>
 
 				</ul>
@@ -71,22 +77,25 @@
 		<div id="slider">
 			<div class="slider-left">
 				<div class="slider">
-					<div class="slider-item"><a href=""><img src="assets/photo/bookstore1.jpg"
+					<div class="slider-item"><a href="#"><img
+								src="https://cf.shopee.sg/file/a2823736441b417cfd60feb4885742ff_xxhdpi"
 								alt="" class=""></a></div>
-					<div class="slider-item"><a href=""><img src="assets/photo/bookstore1.jpg"
+					<div class="slider-item"><a href="#"><img
+								src="https://cf.shopee.sg/file/8bf6b1155f5e55adde0a13c17d2a14a5_xxhdpi"
 								alt="" class=""></a></div>
-					<div class="slider-item"><a href=""><img src="assets/photo/bookstore1.jpg"
+					<div class="slider-item"><a href="#"><img
+								src="https://cf.shopee.sg/file/9c182845b494735d19f901b0e943bc71_xxhdpi"
 								alt="" class=""></a></div>
 				</div>
 			</div>
 			<div class="panels-right">
 				<div class="panel">
-					<a href=""><img src="assets/photo/bookstore1.jpg" alt=""
-							class="slider-item-img"></a>
+					<a href="#"><img src="https://cf.shopee.sg/file/9113223251f483640dc9d5c3d43c47a8_xhdpi"
+							alt="" class="slider-item-img"></a>
 				</div>
 				<div class="panel">
-					<a href=""><img src="assets/photo/bookstore1.jpg" alt=""
-							class="slider-item-img"></a>
+					<a href="#"><img src="https://cf.shopee.sg/file/2fe53d83a055b6b2a28e1543aad0b000_xhdpi"
+							alt="" class="slider-item-img"></a>
 				</div>
 			</div>
 		</div>
@@ -173,7 +182,7 @@
 		<!-- Best item on sale -->
 		<h3 class="section-label mt-32">
 			<div class="sale-label">SẢN PHẨM GIẢM GIÁ</div>
-			<a href="#" class="label-direction">Xem tất cả   <i class="fas fa-angle-right"></i></a>
+			<a href="#" class="label-direction">Xem tất cả <i class="fas fa-angle-right"></i></a>
 		</h3>
 		<div id="sale" class="content-section">
 			<div class="row-item">
@@ -455,7 +464,7 @@
 		<!-- New item -->
 		<h3 class="section-label mt-32">
 			<div class="sale-label">SẢN PHẨM MỚI</div>
-			<a href="#" class="label-direction">Xem tất cả   <i class="fas fa-angle-right"></i></a>
+			<a href="#" class="label-direction">Xem tất cả <i class="fas fa-angle-right"></i></a>
 		</h3>
 		<div id="sale" class="content-section">
 			<div class="row-item">
@@ -938,11 +947,12 @@
 				<a href="#" class="item item-col-2">
 					<div class="item-container">
 						<div class="item-image">
-							<img src="assets/photo/portfolio.png" alt="" class="item-img">
+							<img src="https://cf.shopee.vn/file/a6646f95da256ceea9f7a5faf35450bb"
+								alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
-								hãng
+							<h2 class="item-name">Nồi chiên không dầu điện tử 5.5L BlueStone
+								AFB-5873
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
@@ -1013,6 +1023,7 @@
 			<a href="#" class="button">Xem tất cả</a>
 		</div>
 		<div id="footer">
+			<div class="ruler-line">&nbsp</div>
 			<div class="footer-container">
 				<div class="footer-section">
 					<h2>CHĂM SÓC KHÁCH HÀNG</h2>
@@ -1038,7 +1049,7 @@
 						<li><a href="#">Liên hệ với truyền thông</a></li>
 					</ul>
 				</div>
-		
+
 				<div class="footer-section">
 					<h2>THANH TOÁN</h2>
 					<ul>
@@ -1056,11 +1067,11 @@
 						<li><a href="#">Ninja Van</a></li>
 					</ul>
 				</div>
-		
+
 				<div class="footer-section">
 					<h2>THEO DÕI CHÚNG TÔI TRÊN</h2>
 					<ul>
-						<li><a href="#"><i class="fab fa-facebook-square"></i>   Facebook</a></li>
+						<li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
 						<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
 						<li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
 					</ul>

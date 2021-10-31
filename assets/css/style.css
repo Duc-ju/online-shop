@@ -38,6 +38,8 @@ body {
   font-family: "Azeret Mono", monospace;
   font-family: "Roboto Slab", serif;
 }
+
+
 html{
   background-color: var(--background_color);
 }
@@ -301,7 +303,7 @@ input{
   
   /* justify-content: center;
   align-items: center; */
-  background-color: var(--primary_color);
+  background-color: white;
 }
 .footer-container{
   display: flex;
@@ -321,20 +323,17 @@ input{
 }
 .footer-section h2{
   font-size: 18px;
-  color: white;
 }
 .footer-section a{
   padding: 12px 16px;
   font-size: 13px;
-  color: white;
 }
 .ruler-line{
   height: 4px;
-  border-top: 1px solid white;
+  border-top: 1px solid var(--primary_color);
   margin: 0 16px;
 }
 #footer-copyright{
-  color: white;
   font-size:18px;
   text-align: center;
   padding: 16px;
@@ -397,6 +396,16 @@ input{
 
 /* Modal end */
  /* item section*/
+ .section-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+  background-color: white;
+  border-radius: 2px;
+  margin: 4px auto;
+  padding: 16px;
+}
  .content-section{
   display: flex;
   flex-direction: column;
@@ -423,6 +432,9 @@ input{
 }
 .item-col-2-4{
   width: 20%;
+}
+.item-col-12{
+  width: 100%;
 }
 .item{
   /* height: 130px;
@@ -453,7 +465,9 @@ input{
   justify-content: center;
   align-items: flex-start;
 }
-.item.item-col-2 .item-img{
+.item.item-col-2 .item-img,
+.item.item-col-12 .item-img
+{
   width: 190px;
   height: 190px;
 }
@@ -461,6 +475,7 @@ input{
   width: 180px;
   height: 180px;
 }
+
 .item-content{
   padding: 8px;
   background-color:white;
