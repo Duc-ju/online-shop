@@ -121,6 +121,7 @@ img{
   border-radius:50%;
 }
 #portfolio .portfolio-name{
+  font-size: 14px;
   margin-top: 8px;
   text-align: center;
 }
