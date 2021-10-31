@@ -28,6 +28,6 @@ addBookElements.forEach(function(addBookElement){
 		window.open(`https://duc-ju.github.io/bookstore-template/Cart.html`,"_self");
 	}
 })
-$('.carousel').carousel({
-	interval: 4000
-})
+// $('.carousel').carousel({
+// 	interval: 4000
+// })

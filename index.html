@@ -16,10 +16,21 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600&family=Roboto+Slab:wght@700&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	<script>
+		$(document).ready(function () {
+			$('.slider').bxSlider();
+		});
+	</script>
+
 
 </head>
 
 <body>
+	<div id="toast"></div>
 	<div id="main">
 		<!-- header section -->
 		<header id="header">
@@ -33,14 +44,13 @@
 						</a>
 					</li>
 					<li class="control-item actived"><a href="#">Trang chủ</a></li>
-					<li class="control-item"><a href="#">Đăng xuất</a></li>
+					<li class="control-item" id="logout"><a href="#">Đăng xuất</a></li>
 
 				</ul>
 			</div>
 
 			<a href="#" class="brand-name">
-				Logo Quán Quen
-
+				<div class="brand-logo"><img src="assets/photo/logo.png" alt="" class=""></div>
 			</a>
 
 
@@ -60,8 +70,14 @@
 		<!-- slider section -->
 		<div id="slider">
 			<div class="slider-left">
-				<div class="slider-item"><a href=""><img src="assets/photo/bookstore1.jpg" alt=""
-							class=""></a></div>
+				<div class="slider">
+					<div class="slider-item"><a href=""><img src="assets/photo/bookstore1.jpg"
+								alt="" class=""></a></div>
+					<div class="slider-item"><a href=""><img src="assets/photo/bookstore1.jpg"
+								alt="" class=""></a></div>
+					<div class="slider-item"><a href=""><img src="assets/photo/bookstore1.jpg"
+								alt="" class=""></a></div>
+				</div>
 			</div>
 			<div class="panels-right">
 				<div class="panel">
@@ -80,61 +96,71 @@
 			<div class="portfolio-row">
 				<a href="#" class="portfolio-item">
 					<div class="portfolio-item-image">
-						<img src="https://cf.shopee.vn/file/687f3967b7c2fe6a134a2c11894eea4b_tn" alt="" class="portfolio-item-img">
+						<img src="https://cf.shopee.vn/file/687f3967b7c2fe6a134a2c11894eea4b_tn"
+							alt="" class="portfolio-item-img">
 					</div>
 					<h3 class="portfolio-name">Thời trang nam</h3>
 				</a>
 				<a href="#" class="portfolio-item">
 					<div class="portfolio-item-image">
-						<img src="	https://cf.shopee.vn/file/75ea42f9eca124e9cb3cde744c060e4d_tn" alt="" class="portfolio-item-img">
+						<img src="	https://cf.shopee.vn/file/75ea42f9eca124e9cb3cde744c060e4d_tn"
+							alt="" class="portfolio-item-img">
 					</div>
 					<h3 class="portfolio-name">Thời trang nữ</h3>
 				</a>
 				<a href="#" class="portfolio-item">
 					<div class="portfolio-item-image">
-						<img src="	https://cf.shopee.vn/file/4540f87aa3cbe99db739f9e8dd2cdaf0_tn" alt="" class="portfolio-item-img">
+						<img src="	https://cf.shopee.vn/file/4540f87aa3cbe99db739f9e8dd2cdaf0_tn"
+							alt="" class="portfolio-item-img">
 					</div>
 					<h3 class="portfolio-name">Thời trang trẻ em</h3>
 				</a>
 				<a href="#" class="portfolio-item">
 					<div class="portfolio-item-image">
-						<img src="https://cf.shopee.vn/file/c3f3edfaa9f6dafc4825b77d8449999d_tn" alt="" class="portfolio-item-img">
+						<img src="https://cf.shopee.vn/file/c3f3edfaa9f6dafc4825b77d8449999d_tn"
+							alt="" class="portfolio-item-img">
 					</div>
 					<h3 class="portfolio-name">Laptop</h3>
 				</a>
 				<a href="#" class="portfolio-item">
 					<div class="portfolio-item-image">
-						<img src="https://cf.shopee.vn/file/31234a27876fb89cd522d7e3db1ba5ca_tn" alt="" class="portfolio-item-img">
+						<img src="https://cf.shopee.vn/file/31234a27876fb89cd522d7e3db1ba5ca_tn"
+							alt="" class="portfolio-item-img">
 					</div>
 					<h3 class="portfolio-name">Điện thoại</h3>
 				</a>
 				<a href="" class="portfolio-item">
 					<div class="portfolio-item-image">
-						<img src="https://hanoicomputercdn.com/media/product/59146_may_tinh_bang_apple_ipad_pro_12_9_m1_bac_2021_0000_1.jpg" alt="" class="portfolio-item-img">
+						<img src="https://hanoicomputercdn.com/media/product/59146_may_tinh_bang_apple_ipad_pro_12_9_m1_bac_2021_0000_1.jpg"
+							alt="" class="portfolio-item-img">
 					</div>
 					<h3 class="portfolio-name">Tablet</h3>
 				</a>
 				<a href="#" class="portfolio-item">
 					<div class="portfolio-item-image">
-						<img src="https://cf.shopee.vn/file/36013311815c55d303b0e6c62d6a8139_tn" alt="" class="portfolio-item-img">
+						<img src="https://cf.shopee.vn/file/36013311815c55d303b0e6c62d6a8139_tn"
+							alt="" class="portfolio-item-img">
 					</div>
 					<h3 class="portfolio-name">Sách</h3>
 				</a>
 				<a href="#" class="portfolio-item">
 					<div class="portfolio-item-image">
-						<img src="	https://cf.shopee.vn/file/74ca517e1fa74dc4d974e5d03c3139de_tn" alt="" class="portfolio-item-img">
+						<img src="	https://cf.shopee.vn/file/74ca517e1fa74dc4d974e5d03c3139de_tn"
+							alt="" class="portfolio-item-img">
 					</div>
 					<h3 class="portfolio-name">Giày dép nam</h3>
 				</a>
 				<a href="#" class="portfolio-item">
 					<div class="portfolio-item-image">
-						<img src="https://cf.shopee.vn/file/48630b7c76a7b62bc070c9e227097847_tn" alt="" class="portfolio-item-img">
+						<img src="https://cf.shopee.vn/file/48630b7c76a7b62bc070c9e227097847_tn"
+							alt="" class="portfolio-item-img">
 					</div>
 					<h3 class="portfolio-name">Giày dép nữ</h3>
 				</a>
 				<a href="#" class="portfolio-item">
 					<div class="portfolio-item-image">
-						<img src="https://product.hstatic.net/1000355922/product/sandal-tre-em-urban-quai-dan-sd2015-ghi__3__970269255729415193195b3f8b6e54b7.jpg" alt="" class="portfolio-item-img">
+						<img src="https://product.hstatic.net/1000355922/product/sandal-tre-em-urban-quai-dan-sd2015-ghi__3__970269255729415193195b3f8b6e54b7.jpg"
+							alt="" class="portfolio-item-img">
 					</div>
 					<h3 class="portfolio-name">Giày dép trẻ em</h3>
 				</a>
@@ -154,17 +180,20 @@
 				<a href="#" class="item">
 					<div class="item-container">
 						<div class="item-image">
-							<img src="https://cf.shopee.vn/file/17f31c8384d188c1d0bf8bb60d6ac2d2" alt="" class="item-img">
+							<img src="https://cf.shopee.vn/file/17f31c8384d188c1d0bf8bb60d6ac2d2"
+								alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -173,35 +202,19 @@
 				<a href="#" class="item">
 					<div class="item-container">
 						<div class="item-image">
-							<img src="https://cf.shopee.vn/file/9443b8c9d25cd576615a9d499d6b131e" alt="" class="item-img">
+							<img src="https://cf.shopee.vn/file/9443b8c9d25cd576615a9d499d6b131e"
+								alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Bộ Đồ Ngủ Nữ Mùa Hè Cao Cấp Loirechic BDN03 -1
+							<h2 class="item-name">Bộ Đồ Ngủ Nữ Mùa Hè Cao Cấp Loirechic
+								BDN03 -1
 							</h2>
-							<div class="item-old-price">106.000đ</div>
+							<div class="item-old-price">&nbsp</div>
 							<div class="item-info">
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="item">
-					<div class="item-container">
-						<div class="item-image">
-							<img src="assets/photo/portfolio.png" alt="" class="item-img">
-						</div>
-						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
-							</h2>
-							<div class="item-old-price">106.000đ</div>
-							<div class="item-info">
-								<div class="item-discount">50% giảm</div>
-								<div class="item-content-section">
-									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -213,14 +226,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -232,14 +247,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -251,21 +268,44 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="item">
+					<div class="item-container">
+						<div class="item-image">
+							<img src="assets/photo/portfolio.png" alt="" class="item-img">
+						</div>
+						<div class="item-content">
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
+							</h2>
+							<div class="item-old-price">106.000đ</div>
+							<div class="item-info">
+								<div class="item-discount">50% giảm</div>
+								<div class="item-content-section">
+									<div class="item-price">58.000đ</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</a>
 
-				
+
 
 
 
@@ -280,14 +320,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -299,14 +341,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -318,14 +362,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -337,14 +383,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -356,14 +404,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -375,20 +425,22 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</a>
-				
+
 
 
 
@@ -413,14 +465,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -432,14 +486,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -451,14 +507,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -470,14 +528,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -489,14 +549,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -508,20 +570,22 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</a>
-				
+
 
 
 
@@ -535,14 +599,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -554,14 +620,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -573,14 +641,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -592,14 +662,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -611,14 +683,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -630,20 +704,22 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</a>
-				
+
 
 
 
@@ -667,14 +743,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -686,14 +764,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -705,14 +785,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -724,14 +806,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -743,14 +827,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -762,20 +848,22 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</a>
-				
+
 
 
 
@@ -790,14 +878,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -809,14 +899,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -828,14 +920,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -847,14 +941,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -866,14 +962,16 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
@@ -885,20 +983,22 @@
 							<img src="assets/photo/portfolio.png" alt="" class="item-img">
 						</div>
 						<div class="item-content">
-							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính hãng
+							<h2 class="item-name">Áo thun nam chất lượng cao nhập khẩu chính
+								hãng
 							</h2>
 							<div class="item-old-price">106.000đ</div>
 							<div class="item-info">
 								<div class="item-discount">50% giảm</div>
 								<div class="item-content-section">
 									<div class="item-price">58.000đ</div>
-									<div class="item-add-button">Thêm vào giỏ hàng</div>
+									<div class="item-add-button">Thêm vào giỏ hàng
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</a>
-				
+
 
 
 
@@ -920,6 +1020,11 @@
 			</div>
 		</div>
 	</div>
+
+
+
+	<!-- script -->
+
 	<script src="assets/js/script.js"></script>
 	<script src="assets/project/homepage/script.js"></script>
 </body>
