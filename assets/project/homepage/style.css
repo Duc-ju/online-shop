@@ -27,7 +27,14 @@ img{
 .button:hover{
   background-color: var(--secondary_color);
 }
+#header{
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 #slider{
+  padding-top: 64px;
   display: flex;
   margin: 16px auto;
   width: 1200px;
