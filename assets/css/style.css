@@ -476,6 +476,7 @@ input{
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  background-color: white;
 }
 .item.item-col-2 .item-img,
 .item.item-col-12 .item-img
@@ -543,7 +544,7 @@ input{
   border-left: 2px dotted white;
   border-right: 2px dotted white;
   position: absolute;
-  top: 0;
+  top: -4px;
   right: -4px;
 }
 
